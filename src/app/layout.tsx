@@ -1,4 +1,5 @@
 import "./globals.css";
+import type { ReactNode } from "react";
 
 export const metadata = {
   title: "IB Bauwerksprüfung – DIN 1076 Prüfungen",
@@ -6,7 +7,11 @@ export const metadata = {
     "Bauwerksprüfungen nach DIN 1076, ZfPBau, Zustandsbewertung und Dokumentation für kommunale und überörtliche Träger.",
 };
 
-export default function RootLayout({ children }) {
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="de">
       <body>{children}</body>
