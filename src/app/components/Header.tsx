@@ -20,13 +20,13 @@ export default function Header() {
       {/* Fester Header */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-neutral-200">
         <div className="container-max px-4 sm:px-6 flex items-center justify-between py-3">
-          {/* Vollständiges Logo */}
+          {/* Vollständiges Logo – größer wie gewünscht */}
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo/logo-full.png"
               alt="IB Bauwerksprüfung Voll-Logo"
-              width={165}
-              height={50}
+              width={220} // größer als vorher
+              height={70}
               className="object-contain"
               priority
             />

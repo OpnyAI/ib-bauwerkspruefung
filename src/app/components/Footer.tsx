@@ -10,10 +10,10 @@ export default function Footer() {
         <div>
           <div className="flex items-start gap-3 mb-3">
             <Image
-              src="/images/logo/logo-full-light-tight.png" // <- NEUE DATEI
+              src="/images/logo/logo-full-light.png" // VOLLES LOGO
               alt="IB Bauwerksprüfung Logo"
-              width={170}
-              height={50}
+              width={220} // GRÖSSER WIE IM HEADER
+              height={70}
               className="object-contain object-left-top"
               priority
             />
