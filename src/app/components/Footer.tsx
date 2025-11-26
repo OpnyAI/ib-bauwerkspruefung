@@ -4,27 +4,22 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-neutral-200 pt-10 pb-28 md:pb-8 mt-8">
-      <div className="container-max px-4 sm:px-6 grid gap-8 md:grid-cols-3 text-sm">
-        {/* Spalte 1 – Logo + Kurzbeschreibung */}
+    <footer className="bg-[#111111] text-neutral-200 pt-6 pb-8 mt-8">
+      <div className="container-max px-4 sm:px-6 grid gap-8 md:grid-cols-3 text-sm items-start">
+        {/* Spalte 1 – Logo + Text */}
         <div>
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-start gap-3 mb-3">
             <Image
-              src="/images/logo/logo-icon-light.png"
+              src="/images/logo/logo-full-light-tight.png" // <- NEUE DATEI
               alt="IB Bauwerksprüfung Logo"
-              width={32}
-              height={32}
-              className="object-contain"
+              width={170}
+              height={50}
+              className="object-contain object-left-top"
+              priority
             />
-            <div>
-              <p className="font-semibold text-sm">IB Bauwerksprüfung</p>
-              <p className="text-xs text-neutral-400">
-                Ingenieure · Sachverständige
-              </p>
-            </div>
           </div>
 
-          <p className="text-xs text-neutral-400 max-w-xs leading-relaxed">
+          <p className="text-xs text-neutral-400 max-w-xs leading-relaxed mt-1">
             Bauwerksprüfungen nach DIN 1076, ingenieurtechnische Beurteilungen
             und digitale Dokumentation – Grundlage für belastbare
             Erhaltungsentscheidungen.
@@ -34,14 +29,12 @@ export default function Footer() {
         {/* Spalte 2 – Kontakt */}
         <div>
           <h3 className="text-sm font-semibold mb-3">Kontakt</h3>
-
-          <p className="text-xs text-neutral-200">
+          <p className="text-xs text-neutral-200 leading-relaxed">
             Wolfshöhle 18A
             <br />
             79777 Ühlingen-Birkendorf
           </p>
-
-          <p className="mt-2 text-xs">
+          <p className="mt-2 text-xs leading-relaxed">
             Tel:{" "}
             <a
               href="tel:+41762219016"
@@ -58,7 +51,6 @@ export default function Footer() {
               info@ib-bauwerkspruefung.de
             </a>
           </p>
-
           <p className="mt-2 text-xs text-neutral-400">
             Geschäftsführer: Igbal Barekzei, M.Eng.
           </p>
@@ -67,7 +59,6 @@ export default function Footer() {
         {/* Spalte 3 – Navigation */}
         <div>
           <h3 className="text-sm font-semibold mb-3">Navigation</h3>
-
           <div className="flex flex-col gap-1 text-xs">
             <a href="#leistungen" className="hover:text-[#D72638]">
               Leistungen
@@ -86,17 +77,15 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="mt-4 flex gap-4 text-xs text-neutral-400">
-            <button
-              type="button"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="hover:text-[#D72638]"
-            >
-              Nach oben
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="mt-4 text-xs text-neutral-400 hover:text-[#D72638]"
+          >
+            Nach oben
+          </button>
 
-          <div className="mt-4 flex gap-4 text-xs text-neutral-500">
+          <div className="mt-3 flex gap-4 text-xs text-neutral-500">
             <a href="/impressum" className="hover:text-[#D72638]">
               Impressum
             </a>
@@ -107,7 +96,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright-Zeile */}
       <div className="border-t border-neutral-700 mt-8">
         <div className="container-max px-4 sm:px-6 py-4 flex flex-col md:flex-row items-start md:items-center justify-between text-[11px] text-neutral-500 leading-relaxed">
           <p>
