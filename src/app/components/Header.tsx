@@ -25,7 +25,7 @@ export default function Header() {
             <Image
               src="/images/logo/logo-full.png"
               alt="IB Bauwerksprüfung Voll-Logo"
-              width={220} // größer als vorher
+              width={220}
               height={70}
               className="object-contain"
               priority
@@ -79,7 +79,7 @@ export default function Header() {
       {/* Mobile Overlay-Menü */}
       {open && (
         <div
-          className="fixed inset-0 z-30 bg-black/40 md:hidden"
+          className="fixed inset-0 z-50 bg-black/40 md:hidden" // <– z-Index erhöht
           onClick={() => setOpen(false)}
         >
           <div
