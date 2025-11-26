@@ -20,24 +20,16 @@ export default function Header() {
       {/* Fester Header */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-neutral-200">
         <div className="container-max px-4 sm:px-6 flex items-center justify-between py-3">
-          {/* Logo + Text */}
-          <Link href="/" className="flex items-center gap-3">
+          {/* Vollständiges Logo */}
+          <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo/logo-icon.png"
-              alt="IB Bauwerksprüfung Logo"
-              width={40}
-              height={40}
+              src="/images/logo/logo-full.png"
+              alt="IB Bauwerksprüfung Voll-Logo"
+              width={165}
+              height={50}
               className="object-contain"
               priority
             />
-            <div className="-mt-1">
-              <p className="font-semibold text-sm sm:text-base text-[#111111] leading-none">
-                IB Bauwerksprüfung
-              </p>
-              <p className="text-[11px] text-neutral-500 leading-none mt-1">
-                Ingenieure · Sachverständige
-              </p>
-            </div>
           </Link>
 
           {/* Desktop-Navigation */}

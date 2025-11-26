@@ -7,7 +7,7 @@ export default function TrustSection() {
             Anerkannte Befähigung
           </h3>
           <p className="mt-2 text-xs text-[#1A1A1A]/70">
-            VFIB-Mitgliedschaft · Prüfungen HP, EP, SP nach DIN 1076.
+            VFIB-Bauwerksprüfer · Prüfungen HP, EP, SP nach DIN 1076.
           </p>
         </div>
 
