@@ -37,7 +37,10 @@ export default function Partners() {
   const items = [...partners, ...partners];
 
   return (
-    <section className="section-padding bg-[#F5F5F4]" id="partner">
+    <section
+      className="section-padding scroll-mt-24 bg-[#F5F5F4] md:scroll-mt-28"
+      id="partner"
+    >
       <div className="container-max">
         <h2 className="text-3xl font-semibold text-[#111]">
           Partner & Auftraggeber

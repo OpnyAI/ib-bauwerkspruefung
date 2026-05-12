@@ -23,7 +23,10 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="vorgehen" className="section-padding">
+    <section
+      id="vorgehen"
+      className="section-padding scroll-mt-24 md:scroll-mt-28"
+    >
       <div className="container-max">
         <h2 className="text-2xl font-semibold text-[#111111]">
           Vorgehensweise

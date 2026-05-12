@@ -51,7 +51,10 @@ const items = [
 
 export default function Services() {
   return (
-    <section id="leistungen" className="section-padding bg-white">
+    <section
+      id="leistungen"
+      className="section-padding scroll-mt-24 bg-white md:scroll-mt-28"
+    >
       <div className="container-max">
         <h2 className="text-2xl font-semibold text-[#111111]">
           Leistungen im Überblick

@@ -61,7 +61,10 @@ export default function Contact() {
   }
 
   return (
-    <section id="kontakt" className="section-padding bg-brand-light">
+    <section
+      id="kontakt"
+      className="section-padding scroll-mt-24 bg-brand-light md:scroll-mt-28"
+    >
       <div className="container-max max-w-3xl">
         <h2 className="text-2xl sm:text-3xl font-heading font-semibold text-neutral-900">
           Kontakt

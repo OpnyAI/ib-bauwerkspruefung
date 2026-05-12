@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section id="ueber-uns" className="section-padding bg-white">
+    <section
+      id="ueber-uns"
+      className="section-padding scroll-mt-24 bg-white md:scroll-mt-28"
+    >
       <div className="container-max grid lg:grid-cols-2 gap-8">
         {/* Linke Seite */}
         <div>
